@@ -23,4 +23,18 @@ What if you’re already established with VMware in a private cloud environment 
 
 **High availability**
 High availability focuses on ensuring maximum availability, regardless of disruptions or events that may occur.
+99%, 99.9%, 99.99%, 99.9995%
+
+**Scalability**
+Scalability refers to the ability to adjust resources to meet. Horizontal Scaling & Vertical Scaling
+
+**Reliability**
+Reliability is the ability of a system to recover from failures and continue to function. It's also one of the pillars of the Microsoft Azure Well-Architected Framework.
+
+**Predictability**
+Predictability in the cloud lets you move forward with confidence. Predictability can be focused on performance predictability or cost predictability. 
+Performance Predictability: Autoscaling, load balancing, and high availability 
+
+**Cost predictability**
+Cost predictability is focused on predicting or forecasting the cost of the cloud spend.  Tools like the Total Cost of Ownership (TCO) or Pricing Calculator to get an estimate of potential cloud spend.
 

@@ -1,4 +1,9 @@
-# azurefundamentals
+# azurefundamentals 
+https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/
+
+**Microsoft Azure Well-Architected Framework**
+https://learn.microsoft.com/en-us/training/paths/azure-well-architected-framework/
+This learning path helps prepare you for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions.
 
 **Shared Responsibility Models**
 IaaS
@@ -33,8 +38,26 @@ Reliability is the ability of a system to recover from failures and continue to 
 
 **Predictability**
 Predictability in the cloud lets you move forward with confidence. Predictability can be focused on performance predictability or cost predictability. 
-Performance Predictability: Autoscaling, load balancing, and high availability 
+
+
+
+**Performance Predictability** 
+Autoscaling, load balancing, and high availability 
 
 **Cost predictability**
 Cost predictability is focused on predicting or forecasting the cost of the cloud spend.  Tools like the Total Cost of Ownership (TCO) or Pricing Calculator to get an estimate of potential cloud spend.
 
+Benefits of manageability in the cloud
+**Management of the cloud**
+Management of the cloud speaks to managing your cloud resources. In the cloud, you can:
+  Automatically scale resource deployment based on need.
+  Deploy resources based on a preconfigured template, removing the need for manual configuration.
+  Monitor the health of resources and automatically replace failing resources.
+  Receive automatic alerts based on configured metrics, so you’re aware of performance in real time.
+
+**Management in the cloud**
+Management in the cloud speaks to how you’re able to manage your cloud environment and resources. You can manage these:
+  Through a web portal.
+  Using a command line interface.
+  Using APIs.
+  Using PowerShell.

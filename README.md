@@ -1,4 +1,9 @@
-# azurefundamentals 
+**3 Parts in Microsoft Azure Fundamentals**
+Microsoft Azure Fundamentals: Describe cloud concepts
+Microsoft Azure Fundamentals: Describe Azure management and governance
+Microsoft Azure Fundamentals: Describe Azure architecture and services
+
+# Microsoft Azure Fundamentals: Describe cloud concepts
 https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/
 
 **Microsoft Azure Well-Architected Framework**
@@ -61,3 +66,37 @@ Management in the cloud speaks to how you’re able to manage your cloud environ
   Using a command line interface.
   Using APIs.
   Using PowerShell.
+
+**Infrastructure as a Service**
+Maintaining the hardware, network connectivity (to the internet), and physical security -> Responsibility of Cloud Provider
+Operating system installation, configuration, and maintenance; network configuration; database and storage configuration -> Responsibility of Client 
+
+Scenarios:
+Lift-and-shift migration
+Testing and development
+
+**Platform as a Service** - Platform as a service (PaaS) is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service)
+Some common scenarios where PaaS might make sense include:
+Development framework
+Analytics or business intelligence
+
+**Software as a Service**
+In a SaaS environment you’re responsible for the data that you put into the system, the devices that you allow to connect to the system, and the users that have access
+Scenarios:
+Email and messaging.
+Business productivity applications.
+Finance and expense tracking.
+
+# Microsoft Azure Fundamentals: Describe Azure management and governance
+Describe factors that can affect costs in Azure.
+Compare the Pricing calculator and Total Cost of Ownership (TCO) calculator.
+Describe the Microsoft Cost Management Tool.
+Describe the purpose of tags.
+
+# Azure shifts development costs from the capital expense (CapEx) of building out and maintaining infrastructure and facilities to an operational expense (OpEx) of renting infrastructure as you need it, whether it’s compute, storage, networking, and so on. OpEx cost can be impacted by many factors.
+Resource type - Cost varies based on the type of resources, the settings for the resource, and the Azure region will all have an impact on how much a resource costs
+Consumption - Pay-as-you-go & Azure also offers the ability to commit to using a set amount of cloud resources in advance and receiving discounts on those “reserved” resources
+Maintenance
+Geography
+Subscription type
+Azure Marketplace

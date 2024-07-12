@@ -94,12 +94,12 @@ Describe the Microsoft Cost Management Tool.
 Describe the purpose of tags.
 
 Azure shifts development costs from the capital expense (CapEx) of building out and maintaining infrastructure and facilities to an operational expense (OpEx) of renting infrastructure as you need it, whether it’s compute, storage, networking, and so on. OpEx cost can be impacted by many factors.
-Resource type - Cost varies based on the type of resources, the settings for the resource, and the Azure region will all have an impact on how much a resource costs
-Consumption - Pay-as-you-go & Azure also offers the ability to commit to using a set amount of cloud resources in advance and receiving discounts on those “reserved” resources
-Maintenance
-Geography
-Subscription type
-Azure Marketplace
+1. Resource type - Cost varies based on the type of resources, the settings for the resource, and the Azure region will all have an impact on how much a resource costs
+2. Consumption - Pay-as-you-go & Azure also offers the ability to commit to using a set amount of cloud resources in advance and receiving discounts on those “reserved” resources
+3. Maintenance
+4. Geography
+5. Subscription type
+6. Azure Marketplace
 
 **Microsoft Cost Management tool**
 Cost Management provides the ability to quickly check Azure resource costs, create alerts based on resource spend, and create budgets that can be used to automate management of resources.
@@ -135,8 +135,26 @@ Types of Resource Locks - Delete Lock & Modify Lock
 The Microsoft Service Trust Portal is a portal that provides access to various content, tools, and other resources about Microsoft security, privacy, and compliance practices.
 Requires Microsoft cloud services account (Microsoft Entra organization account)
 
-**Tools for managing and deploying Azure resources**
-1. Azure portal
-2. Azure Cloud Shell, including Azure CLI and Azure PowerShell
-3. The purpose of Azure Arc
-4. Azure Resource Manager (ARM) and Azure ARM templates
+**Tools for deploying Azure resources**
+1. **Azure portal:** The Azure portal is a web-based, unified console that provides an alternative to command-line tools
+2. **Azure Cloud Shell:** includes both Azure CLI and Azure PowerShell. Difference: Azure PowerShell uses PowerShell commands and the Azure CLI uses Bash commands.
+3. **The purpose of Azure Arc:** Azure Arc simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform.
+   1. Servers
+   2. Kubernetes clusters
+   3. Azure data services
+   4. SQL Server
+   5. Virtual machines (preview)
+4. **Azure Resource Manager (ARM) and Azure ARM templates**: Azure Resource Manager (ARM) is the deployment and management service for Azure. 
+   ARM templates and Bicep are two examples of using infrastructure as code with the Azure Resource Manager to maintain your environment
+
+**Monitoring tools in Azure**
+1. **Azure Advisor:** Azure Advisor evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs
+2. **Azure Service Health:**  Azure Service Health helps you keep track of Azure resource, both your specifically deployed resources and the overall status of Azure.
+     1. **Azure Status** is a broad picture of the status of Azure globally.
+     2. **Service Health** provides a narrower view of Azure services and regions.
+     3. **Resource Health** is a tailored view of your actual Azure resources.
+3. **Azure Monitor:** Including Azure Log Analytics, Azure Monitor Alerts, and Application Insights.
+    **Azure Monitor** is a platform for collecting data on your resources, analyzing that data, visualizing the information, and even acting on the results.
+     Azure Log Analytics is the tool in the Azure portal where you’ll write and run log queries on the data gathered by Azure Monitor.
+     Azure Monitor Alerts
+     Application Insights

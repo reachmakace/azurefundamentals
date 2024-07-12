@@ -100,3 +100,5 @@ Maintenance
 Geography
 Subscription type
 Azure Marketplace
+
+**Microsoft Cost Management tool**

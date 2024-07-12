@@ -1,10 +1,12 @@
 **3 Parts in Microsoft Azure Fundamentals**
-Microsoft Azure Fundamentals: Describe cloud concepts
-Microsoft Azure Fundamentals: Describe Azure management and governance
-Microsoft Azure Fundamentals: Describe Azure architecture and services
-
 # Microsoft Azure Fundamentals: Describe cloud concepts
 https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/
+
+# Microsoft Azure Fundamentals: Describe Azure management and governance
+https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/
+
+# Microsoft Azure Fundamentals: Describe Azure architecture and services
+https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/
 
 **Microsoft Azure Well-Architected Framework**
 https://learn.microsoft.com/en-us/training/paths/azure-well-architected-framework/
@@ -102,3 +104,41 @@ Subscription type
 Azure Marketplace
 
 **Microsoft Cost Management tool**
+Cost Management provides the ability to quickly check Azure resource costs, create alerts based on resource spend, and create budgets that can be used to automate management of resources.
+# Cost alerts
+1. Budget Alerts - Alerts the customers based on the Budget threshold
+2. Credit Alerts - Azure Prepayment (previously Azure Monetary Commitment). Alerts upon Azure credits are consumed. Need to have EA (Enterprise Agreement) to avail this feature. 
+3. Department Spending Quota Alerts - Notifies you when department of an organization spending reaches a fixed threshold of the quota 
+
+# Budget
+A budget is where you set a spending limit for Azure.
+
+# Purpose of tags
+Resource tags are another way to organize resources. Tags provide extra information, or metadata, about your resources
+Other ways to organize resources is based on Subscription/Resource groups
+
+# Tools in Azure for governance and compliance
+**Microsoft Purview**
+It is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data.
+Microsoft Purview: Risk and compliance,  unified data governance.
+1. Automated data discovery
+2. Confidential data classification
+3. End-to-end data lineage
+
+**Azure Policy**
+Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. 
+
+**Azure Initiative** - An Azure Policy initiative is a way of grouping related policies together. The initiative definition contains all of the policy definitions to help track your compliance state for a larger goal.
+
+**Purpose of resource locks** - A resource lock prevents resources from being accidentally deleted or changed.
+Types of Resource Locks - Delete Lock & Modify Lock
+
+**Microsoft Service Trust Portal**
+The Microsoft Service Trust Portal is a portal that provides access to various content, tools, and other resources about Microsoft security, privacy, and compliance practices.
+Requires Microsoft cloud services account (Microsoft Entra organization account)
+
+**Tools for managing and deploying Azure resources**
+Azure portal
+Azure Cloud Shell, including Azure CLI and Azure PowerShell
+The purpose of Azure Arc
+Azure Resource Manager (ARM) and Azure ARM templates

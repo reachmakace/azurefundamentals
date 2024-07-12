@@ -46,8 +46,6 @@ Reliability is the ability of a system to recover from failures and continue to 
 **Predictability**
 Predictability in the cloud lets you move forward with confidence. Predictability can be focused on performance predictability or cost predictability. 
 
-
-
 **Performance Predictability** 
 Autoscaling, load balancing, and high availability 
 
@@ -95,7 +93,7 @@ Compare the Pricing calculator and Total Cost of Ownership (TCO) calculator.
 Describe the Microsoft Cost Management Tool.
 Describe the purpose of tags.
 
-# Azure shifts development costs from the capital expense (CapEx) of building out and maintaining infrastructure and facilities to an operational expense (OpEx) of renting infrastructure as you need it, whether it’s compute, storage, networking, and so on. OpEx cost can be impacted by many factors.
+Azure shifts development costs from the capital expense (CapEx) of building out and maintaining infrastructure and facilities to an operational expense (OpEx) of renting infrastructure as you need it, whether it’s compute, storage, networking, and so on. OpEx cost can be impacted by many factors.
 Resource type - Cost varies based on the type of resources, the settings for the resource, and the Azure region will all have an impact on how much a resource costs
 Consumption - Pay-as-you-go & Azure also offers the ability to commit to using a set amount of cloud resources in advance and receiving discounts on those “reserved” resources
 Maintenance
@@ -138,7 +136,7 @@ The Microsoft Service Trust Portal is a portal that provides access to various c
 Requires Microsoft cloud services account (Microsoft Entra organization account)
 
 **Tools for managing and deploying Azure resources**
-Azure portal
-Azure Cloud Shell, including Azure CLI and Azure PowerShell
-The purpose of Azure Arc
-Azure Resource Manager (ARM) and Azure ARM templates
+1. Azure portal
+2. Azure Cloud Shell, including Azure CLI and Azure PowerShell
+3. The purpose of Azure Arc
+4. Azure Resource Manager (ARM) and Azure ARM templates

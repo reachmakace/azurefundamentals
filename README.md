@@ -159,15 +159,24 @@ Requires Microsoft cloud services account (Microsoft Entra organization account)
      2. Azure Monitor Alerts
      3. Application Insights
         
-# Core Architectural components of Azure
+# Core Architectural components of Azure 
+**Physical Infrastucture**
 1. Azure regions - One of more data centers in a specific region
 2. Region pairs - Two regions with 300 miles apart
 3. Sovereign regions - Dedicated Azure instance and not connected to the main Azure instance (DoD, US Govern etc)
 4. Availability Zones - One of more datacenters in a region with standlone Power supply, cooling and network to provide resilency
 5. Azure datacenters - Group of server racks
-6. Azure resources and Resource Groups - Contains one of more resources
-7. Subscriptions - Contains one or more resource groups
-8. Management groups - Contains one or more subscriptions
-9. Hierarchy of resource groups, subscriptions, and management groups
+**Management Infrastucture**
+7. Azure resources - A resource is the basic building block of Azure. Anything you create, provision, deploy, etc. is a resource. Virtual Machines (VMs), virtual networks, databases,       cognitive services, etc. are all considered resources within Azure.
+8. Resource Groups - Resource groups are simply groupings of resources.
+9. Subscriptions - Contains one or more resource groups. Two types of subscription boundaries -> 1. Billing Boundary, 2. Access Control Boundary
+10. Management groups - Contains one or more subscriptions. Azure management groups provide a level of scope above subscriptions
+11. Hierarchy of resource groups, subscriptions, and management groups
    
 # Azure compute and networking services
+Compare compute types, including container instances, virtual machines, and functions
+virtual machine (VM) options, including VMs, Virtual Machine Scale Sets, availability sets, Azure Virtual Desktop
+Resources required for virtual machines
+Application hosting options, including Azure Web Apps, containers, and virtual machines
+virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute
+Public and private endpoints

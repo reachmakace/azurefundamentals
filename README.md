@@ -155,6 +155,19 @@ Requires Microsoft cloud services account (Microsoft Entra organization account)
      3. **Resource Health** is a tailored view of your actual Azure resources.
 3. **Azure Monitor:** Including Azure Log Analytics, Azure Monitor Alerts, and Application Insights.
     **Azure Monitor** is a platform for collecting data on your resources, analyzing that data, visualizing the information, and even acting on the results.
-     Azure Log Analytics is the tool in the Azure portal where you’ll write and run log queries on the data gathered by Azure Monitor.
-     Azure Monitor Alerts
-     Application Insights
+     1. Azure Log Analytics is the tool in the Azure portal where you’ll write and run log queries on the data gathered by Azure Monitor.
+     2. Azure Monitor Alerts
+     3. Application Insights
+        
+# Core Architectural components of Azure
+1. Azure regions - One of more data centers in a specific region
+2. Region pairs - Two regions with 300 miles apart
+3. Sovereign regions - Dedicated Azure instance and not connected to the main Azure instance (DoD, US Govern etc)
+4. Availability Zones - One of more datacenters in a region with standlone Power supply, cooling and network to provide resilency
+5. Azure datacenters - Group of server racks
+6. Azure resources and Resource Groups - Contains one of more resources
+7. Subscriptions - Contains one or more resource groups
+8. Management groups - Contains one or more subscriptions
+9. Hierarchy of resource groups, subscriptions, and management groups
+   
+# Azure compute and networking services

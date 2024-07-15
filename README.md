@@ -243,3 +243,9 @@ Azure virtual networks provide the following key networking capabilities:
     Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure.
 
 # Azure storage services
+Azure storage services
+Storage tiers
+Redundancy options
+Storage account options and storage types
+Options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync
+Migration options, including Azure Migrate and Azure Data Box

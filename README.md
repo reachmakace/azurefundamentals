@@ -174,9 +174,33 @@ Requires Microsoft cloud services account (Microsoft Entra organization account)
 11. Hierarchy of resource groups, subscriptions, and management groups
    
 # Azure compute and networking services
-Compare compute types, including container instances, virtual machines, and functions
-virtual machine (VM) options, including VMs, Virtual Machine Scale Sets, availability sets, Azure Virtual Desktop
+compute types:
+1. Container - Containers are a virtualization environment.
+   Azure Container Instances - Azure Container Instances offer the fastest and simplest way to run a container in Azure; without having to manage any virtual machines or adopt any
+     additional services. Azure Container Instances are a platform as a service (PaaS) offering. No provision for Certificates, revisions, scale, and environments
+   Azure Container Apps - Azure Container Apps are similar in many ways to a container instance. PaaS offering but doesn't have direct access to Kubernetes API.
+    Supports Certificates, revisions, scale, and environments
+   Azure Kubernetes Service - Azure Kubernetes Service (AKS) is a container orchestration service.
+      
+3. Virtual machines - With Azure Virtual Machines (VMs), you can create and use VMs in the cloud. VMs provide infrastructure as a service (IaaS).
+   Scale VMs in Azure
+     **Virtual machine scale sets** - Virtual machine scale sets let you create and manage a group of identical, load-balanced VMs.
+     **Virtual machine availability sets** - Availability sets are designed to ensure that VMs stagger updates and have varied power and network connectivity, preventing you from losing all your VMs with a single network or power failure.
+       Update domain: The update domain groups VMs that can be rebooted at the same time. This allows you to apply updates while knowing that only one update domain grouping will be                           offline at a time.
+       Fault domain:  The fault domain groups your VMs by common power source and network switch. By default, an availability set will split your VMs across up to three fault domains
+    **VM Resources**
+      1. Size (purpose, number of processor cores, and amount of RAM)
+      2. Storage disks (hard disk drives, solid state drives, etc.)
+      3. Networking (virtual network, public IP address, and port configuration)
+
+     **Azure virtual desktop**
+       Azure Virtual Desktop is a desktop and application virtualization service that runs on the cloud.
+  
+5. **Functions**
+
 Resources required for virtual machines
+
 Application hosting options, including Azure Web Apps, containers, and virtual machines
+  Azure App Service - It is a service often called a "fully-featured" offering for hosting applications (especially Web applications). Need not be a container based application
 virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute
 Public and private endpoints

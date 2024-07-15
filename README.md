@@ -202,5 +202,44 @@ Resources required for virtual machines
 
 Application hosting options, including Azure Web Apps, containers, and virtual machines
   Azure App Service - It is a service often called a "fully-featured" offering for hosting applications (especially Web applications). Need not be a container based application
-virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute
-Public and private endpoints
+
+**Azure Virtual Networks**
+Azure virtual networks and virtual subnets enable Azure resources, such as VMs, web apps, and databases, to communicate with each other, with users on the internet, and with your on-premises client computers
+Azure virtual networks provide the following key networking capabilities:
+1. **Isolation and segmentation** - Azure virtual network allows you to create multiple isolated virtual networks
+2. **Internet communications** - You can enable incoming connections from the internet by assigning a public IP address to an Azure resource, or putting the resource behind a public load balancer.
+3. **Communicate between Azure resources** - Azure resources to communicate securely with each other in one of two ways. 1. Virtual Network 2. Service endpoints (Azure SQL Database, Azure storage)
+4.**Communicate with on-premises resources:** Azure virtual networks enable you to link resources together in your on-premises environment and within your Azure subscription.
+     1. Point to site - Point-to-site virtual private network connections are from a computer outside your organization back into your corporate network
+     2. Site to Site - Site-to-site virtual private networks link your on-premises VPN device or gateway to the Azure VPN gateway in a virtual network.
+     3. Azure Express Route - It provides a dedicated private connectivity to Azure that doesn't travel over the internet.
+5. **Route network traffic** - By Default, Azure routes traffic between subnets on any connected virtual networks, on-premises networks, and the internet.
+    1. Route tables
+    2. Border Gateway protocol
+6. **Filter network traffic** - Azure virtual networks enable you to filter traffic between subnets by using the following approaches:
+    1 . Network Security Groups: These Azure resources that can contain multiple inbound and outbound security rules
+    2.  Network Security Appliances - specialized VM running particular network function, such as running a firewall or performing wide area network (WAN) optimization.
+8. **Connect virtual networks:** You can link virtual networks together by using virtual network peering. **Peering** allows two virtual networks to connect directly to each other
+9   A **virtual private network (VPN)** uses an encrypted tunnel within another network. VPNs are typically deployed to connect two or more trusted private networks to one another over an untrusted network (typically the public internet).
+10. **VPN gateway** A VPN gateway is a type of virtual network gateway.
+    All data transfer is encrypted inside a private tunnel as it crosses the internet.
+    You can deploy only one VPN gateway in each virtual network. 
+    When setting up a VPN gateway, you must specify the type of VPN - either **policy-based or route-based**.
+    
+    **High-availability scenarios**
+    Active/standby
+    Active/active
+    ExpressRoute failover
+    Zone-redundant gateways
+    Microsoft uses BGP, an industry standard dynamic routing protocol, to exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses
+11. **Express Routes**
+    ExpressRoute allows you to create a connection between your on-premises network and the Microsoft cloud in four different ways,
+    1. CloudExchange Colocation - If your facility is co-located at a cloud exchange, you can request a virtual cross-connect to the Microsoft cloud
+    2. Point-to-point Ethernet Connection - Point-to-point ethernet connection refers to using a point-to-point connection to connect your facility to the Microsoft cloud.
+    3. Any-to-any (IPVPN) Connection - With any-to-any connectivity, you can integrate your wide area network (WAN) with Azure by providing connections to your offices and datacenters
+    4. ExpressRoute Direct - You can connect directly into the Microsoft's global network at a peering location strategically distributed across the world.
+    Even if you have an ExpressRoute connection, DNS queries, certificate revocation list checking, and Azure Content Delivery Network requests are still sent over the public internet.
+12. **Azure DNS**
+    Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure.
+
+# Azure storage services

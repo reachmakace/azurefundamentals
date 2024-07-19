@@ -243,9 +243,55 @@ Azure virtual networks provide the following key networking capabilities:
     Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure.
 
 # Azure storage services
-Azure storage services
+A storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
+
+**Redundancy Options**
+  **1. Locally redundant storage (LRS):**
+       Locally redundant storage (LRS) replicates your data **three times** within a single data center in the primary region.
+       LRS provides at least **11 nines of durability (99.999999999%)** of objects over a given year.
+  **2. Zone-redundant storage (ZRS)**:
+      For Availability Zone-enabled Regions, zone-redundant storage (ZRS) replicates your Azure Storage data synchronously across three Azure availability zones in the primary region.
+      ZRS offers durability for Azure Storage data objects of at least 12 nines (99.9999999999%) over a given year.
+
+**Redundancy in a secondary region** - High availability and durability. Replicates data in another paired region which is miles aways. Region pair cannot be changed. 
+  By default data in secondary region does not reach access. Read access will be available only during failover to secondary region. 
+  Data is replicated to secondary region asynchronously. 
+  The interval between the most recent writes to the primary region and the last write to the secondary region is known as the **recovery point objective (RPO)**. 
+  Azure Storage typically has an RPO of less than 15 minutes,
+  **3. Geo-redundant storage (GRS):**
+       GRS is similar to running LRS in two regions. 3 Copies in 1 data center of primary region and 3 Copies in 1 data center of secondary region
+       GRS offers durability for Azure Storage data objects of at least 16 nines (99.99999999999999%) over a given year.
+       
+  **4. Read-access geo-redundant storage (RA-GRS):** Same as GRS but have default read access to secondary region
+  Geo-zone-redundant storage (GZRS)
+    Data in a GZRS storage account is copied across three Azure availability zones in the primary region (similar to ZRS) and is also replicated to a secondary geographic region, using LRS, for protection from regional disasters.
+    GZRS is designed to provide at least 16 nines (99.99999999999999%) of durability of objects over a given year.
+  Read-access geo-zone-redundant storage (RA-GZRS): Same as GZRS but have default read access to secondary region
+  Default read access to secondary region
+  https://rajanieshkaushikk.com/2023/04/08/azure-blob-storage-vs-file-storage-vs-disk-storage-which-is-right-for-you/
+  
+
+
+
+**Endpoint format for Azure Storage services**
+Blob Storage --> https://<storage-account-name>.blob.core.windows.net
+Data Lake Storage Gen2 -->	https://<storage-account-name>.dfs.core.windows.net
+Azure Files -->	https://<storage-account-name>.file.core.windows.net
+Queue Storage -->	https://<storage-account-name>.queue.core.windows.net
+Table Storage -->	https://<storage-account-name>.table.core.windows.net
+
+1. Azure storage services
+   
 Storage tiers
 Redundancy options
 Storage account options and storage types
 Options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync
 Migration options, including Azure Migrate and Azure Data Box
+
+**Azure migration tools**
+**Azure Migrate: Discovery and assessment**. Discover and assess on-premises servers running on VMware, Hyper-V, and physical servers in preparation for migration to Azure.
+**Azure Migrate: Server Migration.** Migrate VMware VMs, Hyper-V VMs, physical servers, other virtualized servers, and public cloud VMs to Azure.
+**Data Migration Assistant.** Data Migration Assistant is a stand-alone tool to assess SQL Servers. It helps pinpoint potential problems blocking migration. It identifies unsupported features, new features that can benefit you after migration, and the right path for database migration.
+**Azure Database Migration Service.** Migrate on-premises databases to Azure VMs running SQL Server, Azure SQL Database, or SQL Managed Instances.
+Azure App Service migration assistant. Azure App Service migration assistant is a standalone tool to assess on-premises websites for migration to Azure App Service. Use Migration Assistant to migrate .NET and PHP web apps to Azure.
+Azure Data Box. Use Azure Data Box products to move large amounts of offline data to Azure.

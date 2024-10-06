@@ -295,3 +295,50 @@ Migration options, including Azure Migrate and Azure Data Box
 **Azure Database Migration Service.** Migrate on-premises databases to Azure VMs running SQL Server, Azure SQL Database, or SQL Managed Instances.
 Azure App Service migration assistant. Azure App Service migration assistant is a standalone tool to assess on-premises websites for migration to Azure App Service. Use Migration Assistant to migrate .NET and PHP web apps to Azure.
 Azure Data Box. Use Azure Data Box products to move large amounts of offline data to Azure.
+
+**Azure Tenant Vs Azure Subcription**
+Basic understanding:
+a tenant is associated with a single identity (person, company, or organization) and can own one or several subscriptions
+a subscription is linked to a payment setup and each subscription will result in a separate bill
+in every subscription, you can add virtual resources (VM, storage, network, ...)
+Additionally:
+Every tenant is linked to a single Azure AD instance, which is shared with all tenant's subscriptions
+Resources from one subscription are isolated from resources in other subscriptions
+An owner of a tenant can decide to have multiple subscriptions:
+
+when Subscriptions limits are reached
+to use different payment methods
+to isolate resources between different departments, projects, regional offices, and so on.
+Example 1:
+Contoso decides to have a tenant with 2 subscriptions:
+
+one subscription for the Prod department with Credit Card A
+one subscription for the Dev department with Credit Card B
+(but could also be the same Credit Card as the one of another subscription)
+In this example, the two departments share the same Azure AD database. However, resources are isolated between departments, and budgets can be separated too.
+
+Example 2:
+A holding company decides to have 2 tenants:
+
+one tenant for subsidiary Contoso with one subscription for Dev and Prod
+one tenant for subsidiary Fabrikam with one subscription for Dev and another subscription for Prod
+In this example, both companies have a different Azure AD database.
+
+Example 3:
+You have a tenant for your personal training.
+In this tenant, you can have:
+
+one free Azure subscription (linked to a credit card but not charged, and can be converted to a Pay-As-You-Go subscription after the free trial)
+one or several Pay-As-You-Go subscriptions (linked to different credit cards)
+one or several Azure Pass Sponsorship subscriptions, not linked to any credit card because these subscriptions are obtained during Microsoft trainings
+one Visual Studio subscription (linked to a credit card) and with different quotas (of free resources) than the free subscription
+Despite all those subscriptions have isolated resources (per subscription), and some are free while you have to pay for others, all subscriptions share the same Azure AD database.
+
+This question requires that you evaluate the underlined text to determine if it is correct.
+Resource groups provide organizations with the ability to manage the compliance of Azure resources across multiple subscriptions.
+Instructions: Review the underlined text. If it makes the statement correct, select `No change is needed`. If the statement is incorrect, select the answer choice that makes the statement correct.
+
+A. No change is needed
+B. Management groups Most Voted
+C. Azure policies
+D. Azure App Service plans

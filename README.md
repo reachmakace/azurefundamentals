@@ -359,3 +359,7 @@ Multiple Azure subscriptions.
 The organization's user accounts in a common Microsoft Entra tenant.
 
 Multiple Microsoft cloud offering subscriptions can use the same Microsoft Entra tenant that acts as a common identity provider. A central Microsoft Entra tenant that contains the synchronized accounts of your on-premises AD DS provides cloud-based Identity as a Service (IDaaS) for your organization.
+
+
+![image](https://github.com/user-attachments/assets/2e687c5a-eba3-4878-be0c-2d732f803dd4)
+

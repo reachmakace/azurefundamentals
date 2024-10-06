@@ -334,11 +334,28 @@ one or several Azure Pass Sponsorship subscriptions, not linked to any credit ca
 one Visual Studio subscription (linked to a credit card) and with different quotas (of free resources) than the free subscription
 Despite all those subscriptions have isolated resources (per subscription), and some are free while you have to pay for others, all subscriptions share the same Azure AD database.
 
-This question requires that you evaluate the underlined text to determine if it is correct.
-Resource groups provide organizations with the ability to manage the compliance of Azure resources across multiple subscriptions.
-Instructions: Review the underlined text. If it makes the statement correct, select `No change is needed`. If the statement is incorrect, select the answer choice that makes the statement correct.
+Here is a quick recap:
 
-A. No change is needed
-B. Management groups Most Voted
-C. Azure policies
-D. Azure App Service plans
+An organization can have multiple subscriptions.
+
+A subscription can have multiple licenses.
+
+Licenses can be assigned to individual user accounts.
+
+User accounts are stored in a Microsoft Entra tenant.
+
+Here is an example of the relationship of organizations, subscriptions, licenses, and user accounts:
+
+An organization identified by its public domain name.
+
+A Microsoft 365 E3 subscription with user licenses.
+
+A Microsoft 365 E5 subscription with user licenses.
+
+A Dynamics 365 subscription with user licenses.
+
+Multiple Azure subscriptions.
+
+The organization's user accounts in a common Microsoft Entra tenant.
+
+Multiple Microsoft cloud offering subscriptions can use the same Microsoft Entra tenant that acts as a common identity provider. A central Microsoft Entra tenant that contains the synchronized accounts of your on-premises AD DS provides cloud-based Identity as a Service (IDaaS) for your organization.

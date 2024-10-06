@@ -166,12 +166,15 @@ Requires Microsoft cloud services account (Microsoft Entra organization account)
 3. Sovereign regions - Dedicated Azure instance and not connected to the main Azure instance (DoD, US Govern etc)
 4. Availability Zones - One of more datacenters in a region with standlone Power supply, cooling and network to provide resilency
 5. Azure datacenters - Group of server racks
+   
 **Management Infrastucture**
 7. Azure resources - A resource is the basic building block of Azure. Anything you create, provision, deploy, etc. is a resource. Virtual Machines (VMs), virtual networks, databases,       cognitive services, etc. are all considered resources within Azure.
 8. Resource Groups - Resource groups are simply groupings of resources.
 9. Subscriptions - Contains one or more resource groups. Two types of subscription boundaries -> 1. Billing Boundary, 2. Access Control Boundary
 10. Management groups - Contains one or more subscriptions. Azure management groups provide a level of scope above subscriptions
 11. Hierarchy of resource groups, subscriptions, and management groups
+
+![image](https://github.com/user-attachments/assets/2e687c5a-eba3-4878-be0c-2d732f803dd4)
    
 # Azure compute and networking services
 compute types:
@@ -359,7 +362,3 @@ Multiple Azure subscriptions.
 The organization's user accounts in a common Microsoft Entra tenant.
 
 Multiple Microsoft cloud offering subscriptions can use the same Microsoft Entra tenant that acts as a common identity provider. A central Microsoft Entra tenant that contains the synchronized accounts of your on-premises AD DS provides cloud-based Identity as a Service (IDaaS) for your organization.
-
-
-![image](https://github.com/user-attachments/assets/2e687c5a-eba3-4878-be0c-2d732f803dd4)
-
